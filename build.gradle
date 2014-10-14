@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.7
+version = '1.0.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Properties Playground', 'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+
+test {
+    systemProperties 'property': 'value'
+}
