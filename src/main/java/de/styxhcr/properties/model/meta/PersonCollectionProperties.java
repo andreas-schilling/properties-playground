@@ -6,6 +6,13 @@ import de.styxhcr.properties.definitions.CollectionProperty;
 import de.styxhcr.properties.model.Hobby;
 import de.styxhcr.properties.model.Person;
 
+/**
+ * This file actually should be generated. For value objects a handcoded
+ * properties enum of course is an option.
+ * 
+ * @author aschilling
+ *
+ */
 public enum PersonCollectionProperties implements CollectionProperty<Person> {
 
 	Hobbies {

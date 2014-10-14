@@ -3,6 +3,13 @@ package de.styxhcr.properties.model.meta;
 import de.styxhcr.properties.definitions.SingleProperty;
 import de.styxhcr.properties.model.Person;
 
+/**
+ * This file actually should be generated. For value objects a handcoded
+ * properties enum of course is an option.
+ * 
+ * @author aschilling
+ *
+ */
 public enum PersonSingleProperties implements SingleProperty<Person> {
 	FirstName {
 		public String getName() {
