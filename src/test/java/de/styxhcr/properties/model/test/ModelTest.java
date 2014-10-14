@@ -11,7 +11,7 @@ import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Sets;
 
-import de.styxhcr.properties.meta.PropertyPredicates;
+import de.styxhcr.properties.definitions.PropertyPredicates;
 import de.styxhcr.properties.model.Hobby;
 import de.styxhcr.properties.model.Person;
 import de.styxhcr.properties.model.meta.HobbySingleProperties;

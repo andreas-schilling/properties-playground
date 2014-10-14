@@ -2,7 +2,7 @@ package de.styxhcr.properties.model.meta;
 
 import java.util.Set;
 
-import de.styxhcr.properties.meta.CollectionProperty;
+import de.styxhcr.properties.definitions.CollectionProperty;
 import de.styxhcr.properties.model.Hobby;
 import de.styxhcr.properties.model.Person;
 

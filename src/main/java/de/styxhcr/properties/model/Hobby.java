@@ -1,6 +1,6 @@
 package de.styxhcr.properties.model;
 
-import de.styxhcr.properties.meta.SingleProperty;
+import de.styxhcr.properties.definitions.SingleProperty;
 import de.styxhcr.properties.model.meta.HobbySingleProperties;
 
 public class Hobby {

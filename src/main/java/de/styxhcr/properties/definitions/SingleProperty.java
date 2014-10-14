@@ -1,4 +1,4 @@
-package de.styxhcr.properties.meta;
+package de.styxhcr.properties.definitions;
 
 public interface SingleProperty<T> extends Property<T> {
 	Object get(T bean);

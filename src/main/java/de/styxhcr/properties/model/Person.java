@@ -5,7 +5,7 @@ import java.util.Set;
 import com.google.common.base.Objects;
 import com.google.common.base.Strings;
 
-import de.styxhcr.properties.meta.SingleProperty;
+import de.styxhcr.properties.definitions.SingleProperty;
 import de.styxhcr.properties.model.meta.PersonSingleProperties;
 
 public class Person {

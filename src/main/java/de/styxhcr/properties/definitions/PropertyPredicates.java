@@ -1,4 +1,4 @@
-package de.styxhcr.properties.meta;
+package de.styxhcr.properties.definitions;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;

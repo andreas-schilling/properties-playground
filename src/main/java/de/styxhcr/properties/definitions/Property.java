@@ -1,4 +1,4 @@
-package de.styxhcr.properties.meta;
+package de.styxhcr.properties.definitions;
 
 public interface Property<T> {
 
