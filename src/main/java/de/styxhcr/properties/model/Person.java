@@ -2,13 +2,16 @@ package de.styxhcr.properties.model;
 
 import java.util.Set;
 
-import com.google.common.base.Objects;
-import com.google.common.base.Strings;
+import org.joda.beans.Bean;
+import org.joda.beans.BeanDefinition;
+import org.joda.beans.MetaBean;
+import org.joda.beans.Property;
 
 import de.styxhcr.properties.definitions.SingleProperty;
 import de.styxhcr.properties.model.meta.PersonSingleProperties;
 
-public class Person {
+@BeanDefinition
+public class Person implements Bean {
 	private String firstName;
 
 	private String lastName;
@@ -54,5 +57,23 @@ public class Person {
 					.append(oneProperty.get(this)).append("\n");
 		}
 		return sb.toString();
+	}
+
+	@Override
+	public MetaBean metaBean() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <R> Property<R> property(String propertyName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Set<String> propertyNames() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

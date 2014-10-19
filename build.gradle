@@ -1,6 +1,20 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+buildscript {
+    repositories {
+    	mavenCentral()
+        maven {
+            url uri('../repo')
+        }
+    }
+    dependencies {
+    	classpath group: 'com.google.guava', name: 'guava', version: '18.0'
+    	classpath group: 'org.joda', name: 'joda-beans', version: '1.2'
+        classpath group: 'org.joda', name: 'joda-beans-gradle-plugin', version: '0.0.1-SNAPSHOT'
+    }
+}
+
 sourceCompatibility = 1.7
 version = '1.0.0'
 jar {
@@ -15,11 +29,17 @@ repositories {
 
 dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    compile 'org.joda:joda-beans:1.2'
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.0'
+}
+
+apply plugin: 'joda-beans-gradle-plugin'
+
+task testValidate(type: org.joda.beans.gradle.tasks.ValidateTask) {
 }
 
 test {
